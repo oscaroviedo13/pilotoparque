@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parques del Municipio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .container {
+            width: 90%;
+            margin: 20px auto;
+        }
+
+        .park {
+            background-color: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .park img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .park h2 {
+            color: #4CAF50;
+        }
+
+        .video {
+            margin-top: 20px;
+        }
+
+        .video iframe {
+            width: 100%;
+            height: 400px;
+        }
+
+        .info {
+            margin-top: 20px;
+        }
+
+        .info p {
+            font-size: 1.2em;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            margin-top: 20px;
+        }
+
+        /* Media Queries for Mobile */
+        @media screen and (max-width: 768px) {
+            .park img, .video iframe {
+                height: auto;
+            }
+
+            .video iframe {
+                height: 300px;
+            }
+
+            .info p {
+                font-size: 1em;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .video iframe {
+                height: 200px;
+            }
+
+            header h1 {
+                font-size: 1.5em;
+            }
+
+            .info p {
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Parques del Municipio</h1>
+</header>
+
+<div class="container">
+
+    <!-- Información del Parque 1 -->
+    <div class="park">
+        <h2>Parque Central</h2>
+        <img src="parque_central.jpg" alt="Imagen del Parque Central">
+        <div class="info">
+            <p>El Parque Central es uno de los más antiguos y populares del municipio. Cuenta con áreas de juegos infantiles, zonas de picnic, y grandes áreas verdes para disfrutar con la familia.</p>
+        </div>
+        <div class="video">
+            <h3>Video del Parque Central</h3>
+            <iframe src="https://www.youtube.com/embed/your-video-id" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <!-- Información del Parque 2 -->
+    <div class="park">
+        <h2>Parque de la Cultura</h2>
+        <img src="parque_cultura.jpg" alt="Imagen del Parque de la Cultura">
+        <div class="info">
+            <p>El Parque de la Cultura es conocido por sus exposiciones de arte y eventos culturales al aire libre. Tiene una fuente interactiva y áreas para actividades artísticas.</p>
+        </div>
+        <div class="video">
+            <h3>Video del Parque de la Cultura</h3>
+            <iframe src="https://www.youtube.com/embed/your-video-id" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <!-- Información del Parque 3 -->
+    <div class="park">
+        <h2>Parque Ecológico</h2>
+        <img src="parque_ecologico.jpg" alt="Imagen del Parque Ecológico">
+        <div class="info">
+            <p>El Parque Ecológico ofrece una experiencia en la naturaleza. Cuenta con senderos ecológicos, una reserva de fauna y flora, y espacios para actividades educativas sobre el medio ambiente.</p>
+        </div>
+        <div class="video">
+            <h3>Video del Parque Ecológico</h3>
+            <iframe src="https://www.youtube.com/embed/your-video-id" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    <p>&copy; 2024 Municipio de Ejemplo. Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>
